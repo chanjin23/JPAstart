@@ -12,7 +12,7 @@ public class JpaMain {
         //JPA는 EntityManagerFactory 공간을 무조건 만ㄷ르어야한다.
 
         EntityManager em = emf.createEntityManager();
-        //쿼리를 날릴때마다 EntityManger를 꼭날려야한다.
+        //쿼리를 날릴때마다 EntityManger를 꼭날려야한다.ㅇㅇ
 
         EntityTransaction tx = em.getTransaction();
         tx.begin();
