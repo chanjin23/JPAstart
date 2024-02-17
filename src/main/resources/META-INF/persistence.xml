@@ -14,7 +14,9 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.use_sql_comments" value="true"/>
-            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <!--create :기존테이블을 삭제후 다시생성해준다. -->
+            <!--create-drop :create와 같으나 마지막에 전부 드랍해준다. -->
         </properties>
     </persistence-unit>
 </persistence>
