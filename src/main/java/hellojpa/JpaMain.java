@@ -20,12 +20,13 @@ public class JpaMain {
 
         try{
             Member member = new Member();
-            member.setId(4L);
-            member.setAge(10);
-            member.setUsername("hello");
-            member.setRoleType(RoleType.USER);
-            
+            member.setUsername("hello1");
+
+            System.out.println("============================");
+            System.out.println("member.getId() = " + member.getId());
             em.persist(member);
+            System.out.println("member.getId() = " + member.getId());
+            System.out.println("============================");
 
             tx.commit();
             //commit이 되면 DB로 넘어가게됨.
